@@ -26,7 +26,7 @@ public class EratosthenesPrimeSieve implements PrimeSieve {
                 System.out.println(i);
         }
 
-    //t2
+    //t5
         return true;
     }
 
