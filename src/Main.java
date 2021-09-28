@@ -10,7 +10,7 @@ public class Main {
 
         EratosthenesPrimeSieve eratosthenesPrimeSieve = new EratosthenesPrimeSieve(limit);
         eratosthenesPrimeSieve.isPrime(p);
-        // eratosthenesPrimeSieve.printPrimes();
+        //eratosthenesPrimeSieve.printPrimes();
 
         System.out.println("Please enter the second upper Limit!");
         int limit2 = s.nextInt();
