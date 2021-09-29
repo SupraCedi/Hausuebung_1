@@ -57,9 +57,9 @@ public class EratosthenesPrimeSieve implements PrimeSieve {
                 }
             }
         }
-        for(int i = 0; i<ncounter;i++) {
+        /*for(int i = 0; i<ncounter;i++) {
             System.out.println(n_numbers[i]);
-        }
+        }*/
         //prim Zahlen finden
         int n;
         for (int i = 2; i <= limit2; i++) {
@@ -77,8 +77,21 @@ public class EratosthenesPrimeSieve implements PrimeSieve {
                 pcounter++;
             }
         }
-        for(int i = 0; i<pcounter;i++) {
+        /*for(int i = 0; i<pcounter;i++) {
             System.out.println(p_numbers[i]);
+        }*/
+        int ergebnis;
+        int firstprime;
+        int secondprime;
+
+        for (int i = 0; i < ncounter; i++) {
+            for (int j = 0; j < pcounter; j++) {
+                firstprime = p_numbers[j];
+                secondprime = p_numbers[j];
+                if (firstprime + secondprime == n_numbers[i])
+                    System.out.println(n_numbers[i] + " sum: " + n_numbers[i] + " = " + firstprime +" + "+ secondprime);
+
+            }
         }
     }
 }
